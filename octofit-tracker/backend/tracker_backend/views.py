@@ -25,6 +25,7 @@ class WorkoutViewSet(viewsets.ModelViewSet):
     queryset = Workout.objects.all()
     serializer_class = WorkoutSerializer
 
+# API root view
 @api_view(['GET'])
 def api_root(request, format=None):
     base_url = 'https://vigilant-spork-w4x5q9566q42gxxp-8000.app.github.dev/'
